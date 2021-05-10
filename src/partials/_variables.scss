@@ -1,5 +1,9 @@
+/* Color*/
+$blue_primary: #527CEB;
+$dark_blue: darken(#527CEB, 50%);
+
 /* Bg color*/
-$bg_blue: darken(#527CEB, 50%);
+$bg_blue: linear-gradient(to bottom, $blue_primary -33%, $dark_blue 40%);
 
 /* Btn Gradient Bg */
 $gradient_btn_blu: linear-gradient(to right, #03a7d3e6, #527ceb);
@@ -8,4 +12,5 @@ $gradient_btn_pink: linear-gradient(to left, #f9636b, #b6246e);
 /* Text color */
 $white_text: #FFFFFF;
 $dark_pink_text: #B6246E;
+$pink_text: #f9636b;
 $cyan_text: #03a7d3e6;

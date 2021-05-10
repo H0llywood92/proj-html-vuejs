@@ -1,95 +1,98 @@
 .bg-blue {
-    background-color: $bg_blue;  
-    padding: 20px 0;
+    background: $bg_blue;     
     color: $white_text;
-    padding-bottom: 80px;
 
-    nav {
-        @include flex;
-        justify-content: space-between;
-        align-items: center;
+    .container {
+        padding-top: 20px;
+        padding-bottom: 60px;
 
-        .logo {
+        nav {
             @include flex;
+            justify-content: space-between;
             align-items: center;
-
-            img {
-                width: 55px;
-                filter: brightness(0) invert(1);
-            }
-
-            .company-name {
-                padding-left: 15px;
-                font-size: 18px;
-
-                .type-company {
-                    font-weight: bold;
+    
+            .logo {
+                @include flex;
+                align-items: center;
+    
+                img {
+                    width: 55px;
+                    filter: brightness(0) invert(1);
+                }
+    
+                .company-name {
+                    padding-left: 15px;
+                    font-size: 18px;
+    
+                    .type-company {
+                        font-weight: bold;
+                    }
                 }
             }
-        }
-
-        .menu {
-            @include flex;
-            align-items: center;
-
-            .link-lists {
+    
+            .menu {
                 @include flex;
-                
-                li {
-                    padding: 0 15px;
-                    font-size: 18px;
-
-                    &:first-child a {
-                        color: $dark_pink_text;
+                align-items: center;
+    
+                .link-lists {
+                    @include flex;
+                    
+                    li {
+                        padding: 0 10px;
+                        font-size: 17px;
+    
+                        &:first-child a {
+                            color: $dark_pink_text;
+                        }
+                        
+                        a {
+                            color: $white_text;
+                        }
                     }
                     
-                    a {
-                        color: $white_text;
+                }
+    
+                button {
+                    margin-left: 40px;               
+                }
+            }
+        }
+    
+        .header-content {
+            @include flex;
+            padding: 40px 0;
+    
+            .intro {
+                width: 50%;
+    
+                h1 {
+                    padding-top: 130px;
+                    font-size: 60px;
+                }
+    
+                span {
+                    font-weight: lighter;
+                }
+    
+                p {
+                    width: 60%;
+                    font-size: 17px;
+                    padding: 50px 0;
+                    color: $cyan_text;
+                }
+    
+                .button-container {
+    
+                    button {
+                        margin-right: 35px;
                     }
                 }
-                
             }
-
-            button {
-                margin-left: 40px;               
+    
+            .header-image {
+                width: 50%;
             }
+    
         }
-    }
-
-    .header-content {
-        @include flex;
-        padding: 40px 0;
-
-        .intro {
-            width: 50%;
-
-            h1 {
-                padding-top: 130px;
-                font-size: 60px;
-            }
-
-            span {
-                font-weight: lighter;
-            }
-
-            p {
-                width: 60%;
-                font-size: 17px;
-                padding: 50px 0;
-                color: $cyan_text;
-            }
-
-            .button-container {
-
-                button {
-                    margin-right: 35px;
-                }
-            }
-        }
-
-        .header-image {
-            width: 50%;
-        }
-
     }
 }
