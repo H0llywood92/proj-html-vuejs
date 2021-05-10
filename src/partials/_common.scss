@@ -4,3 +4,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Common */
+ul {
+    list-style-type: none;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    @include btn;
+}
+
+.btn-blue {
+    background: $gradient_btn_blu;
+}
+
+.btn-pink {
+    background: $gradient_btn_pink;
+}

@@ -1,0 +1,16 @@
+@mixin flex {
+    display: -webkit-box;      
+    display: -moz-box;         
+    display: -ms-flexbox;      
+    display: -webkit-flex; 
+    display: flex;
+};
+
+@mixin btn {
+    padding: 12px 35px;
+    color: white;
+    font-size: 17px;
+    border-radius: 20px;
+    border: 0;
+    cursor: pointer;
+}

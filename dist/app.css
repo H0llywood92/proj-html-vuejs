@@ -1,6 +1,117 @@
+/* Bg color*/
+/* Btn Gradient Bg */
+/* Text color */
 /* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Common */
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.btn {
+  padding: 12px 35px;
+  color: white;
+  font-size: 17px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-blue {
+  background: linear-gradient(to right, #03a7d3e6, #527ceb);
+}
+
+.btn-pink {
+  background: linear-gradient(to left, #f9636b, #b6246e);
+}
+
+.bg-blue {
+  background-color: #061438;
+  padding: 20px 0;
+  color: #FFFFFF;
+  padding-bottom: 80px;
+}
+.bg-blue nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.bg-blue nav .logo {
+  display: flex;
+  align-items: center;
+}
+.bg-blue nav .logo img {
+  width: 55px;
+  filter: brightness(0) invert(1);
+}
+.bg-blue nav .logo .company-name {
+  padding-left: 15px;
+  font-size: 18px;
+}
+.bg-blue nav .logo .company-name .type-company {
+  font-weight: bold;
+}
+.bg-blue nav .menu {
+  display: flex;
+  align-items: center;
+}
+.bg-blue nav .menu .link-lists {
+  display: flex;
+}
+.bg-blue nav .menu .link-lists li {
+  padding: 0 15px;
+  font-size: 18px;
+}
+.bg-blue nav .menu .link-lists li:first-child a {
+  color: #B6246E;
+}
+.bg-blue nav .menu .link-lists li a {
+  color: #FFFFFF;
+}
+.bg-blue nav .menu button {
+  margin-left: 40px;
+}
+.bg-blue .header-content {
+  display: flex;
+  padding: 40px 0;
+}
+.bg-blue .header-content .intro {
+  width: 50%;
+}
+.bg-blue .header-content .intro h1 {
+  padding-top: 130px;
+  font-size: 60px;
+}
+.bg-blue .header-content .intro span {
+  font-weight: lighter;
+}
+.bg-blue .header-content .intro p {
+  width: 60%;
+  font-size: 17px;
+  padding: 50px 0;
+  color: #03a7d3e6;
+}
+.bg-blue .header-content .intro .button-container button {
+  margin-right: 35px;
+}
+.bg-blue .header-content .header-image {
+  width: 50%;
 }

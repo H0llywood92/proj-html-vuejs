@@ -10,7 +10,7 @@
 var app = new Vue({
   el: '#root',
   data: {
-    test: 'ciao'
+    navbarLink: ['Home', 'About', 'Services', 'Blog', 'Contact', 'Portfolio']
   },
   methods: {}
 });
