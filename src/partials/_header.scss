@@ -16,18 +16,9 @@
                 align-items: center;
     
                 img {
-                    width: 55px;
-                    filter: brightness(0) invert(1);
+                    width: 150px;
                 }
     
-                .company-name {
-                    padding-left: 15px;
-                    font-size: 18px;
-    
-                    .type-company {
-                        font-weight: bold;
-                    }
-                }
             }
     
             .menu {
@@ -64,29 +55,13 @@
     
             .intro {
                 width: 50%;
-    
+                @include intro-bg-blue;
+
                 h1 {
                     padding-top: 130px;
                     font-size: 60px;
                 }
-    
-                span {
-                    font-weight: lighter;
-                }
-    
-                p {
-                    width: 60%;
-                    font-size: 17px;
-                    padding: 50px 0;
-                    color: $cyan_text;
-                }
-    
-                .button-container {
-    
-                    button {
-                        margin-right: 35px;
-                    }
-                }
+            
             }
     
             .header-image {
