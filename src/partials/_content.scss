@@ -1,14 +1,10 @@
 .services {
     padding: 60px;
     text-align: center;
+    background-color: $bg_light_grey;
 
     h2 {
-        font-size: 50px;
         padding: 15px 0;
-
-        span {
-            font-weight: 400;
-        }
     }
 
     p {
@@ -84,8 +80,190 @@
                 padding: 60px;
                 text-align: -webkit-center;
     
-                h2 {
-                    font-size: 40px;
+            }
+        }
+    }
+}
+
+.portfolio {
+    background-color: $bg_light_grey;
+}
+
+.price-list {
+    background: $bg_blue;
+    position: relative;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 400px;
+
+    h2 {
+        color: $white_text;
+        padding: 30px 0;
+    }
+
+    p {
+        color: $grey_text;
+    }
+
+    .price-box-container {
+        @include flex;
+        position: absolute;
+        top: 50%;
+        left: 16%;
+        
+
+        .box-content {
+            background-color: #ffffff;
+            padding: 40px 100px;
+            border-radius: 20px;
+            position: relative;
+            margin-right: 60px;
+
+
+            h3 {
+                font-size: 40px;
+                position: relative;
+                z-index: 1;
+            }
+
+            p {
+                color: #000000;
+                text-transform: uppercase;
+                padding: 10px 0;
+                position: relative;
+                z-index: 1;
+                font-weight: bold;
+            }
+
+            .number-price {
+                font-size: 100px;
+                font-weight: bold;
+                padding-bottom: 30px;
+                position: relative;
+                z-index: 1;
+
+                &::before {
+                    content: "$";
+                    font-size: 14px;
+                    display: block;
+                    position: relative;
+                    right: 60px;
+                    top: 0;
+                    padding-top: 30px;
+                }
+
+                &::after {
+                    content: 'Per Month';
+                    display: block;
+                    font-size: 14px;
+                    color: $grey_text;
+                    font-weight: 400;
+                }
+            }
+
+            .features-subscription {
+                padding: 10px 0;
+                span {
+                    color: $grey_text;
+                }
+            }
+
+            button {
+                margin-top: 30px;
+                box-shadow: 0 0 20px $pink_text;
+
+                span {
+                    padding-left: 15px;
+                    
+                    i {
+                        vertical-align: middle;
+                    }
+                }
+            }
+
+            .bg-number {
+                position: absolute;
+                top: -70px;
+                right: -10px;
+                font-size: 300px;
+                font-weight: bold;
+                color: #00000014;
+            }
+
+            /* Pink Box */
+            &.bg-pink {
+                background: linear-gradient(to top, #f9636b, #b6246e);
+                color: #FFFFFF;
+
+                p {
+                    color: #FFFFFF;
+                }
+
+                .number-price {
+
+                    &::after {
+                        
+                        color: #e0e0e0;
+                    }
+                }
+
+                .features-subscription {
+                    
+                    span {
+                        color: #e0e0e0;
+                    }
+                }
+    
+                button {
+                    color: $pink_text;
+                }
+            }
+        }
+    }
+}
+
+.blog {
+    background-color: $bg_light_grey;
+    padding-top: 500px;
+    text-align: center;
+
+    h2 {
+        padding: 20px 0;
+    }
+
+    .blog-container {
+
+        .box-container {
+            height: 350px;
+
+            &.bg-image {
+                padding: 20px;
+                background-image: url('../img/headway-537308-unsplash-1380x703.jpg');
+                background-size: cover;
+            }
+
+            .box-content {
+                @include flex;
+                
+                .left {
+                    .date {
+    
+                        color: #e0e0e0;
+        
+                        .pound {
+                            padding: 0 5px;
+                            font-size: 3px;
+                            vertical-align: middle;
+                        }
+        
+                        .about-by {
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+
+                .right {
+
                 }
             }
         }

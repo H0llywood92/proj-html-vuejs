@@ -53,6 +53,13 @@ img {
   color: #f9636b;
 }
 
+h2 {
+  font-size: 50px;
+}
+h2 span {
+  font-weight: 400;
+}
+
 .bg-blue {
   background: linear-gradient(to bottom, #527CEB -33%, #061438 40%);
   color: #FFFFFF;
@@ -124,13 +131,10 @@ img {
 .services {
   padding: 60px;
   text-align: center;
+  background-color: #00000014;
 }
 .services h2 {
-  font-size: 50px;
   padding: 15px 0;
-}
-.services h2 span {
-  font-weight: 400;
 }
 .services p {
   color: #888888;
@@ -205,6 +209,143 @@ img {
 .bg-blue .container .section-content .section-intro .button-container button {
   margin-right: 35px;
 }
-.bg-blue .container .section-content .section-intro h2 {
+
+.portfolio {
+  background-color: #00000014;
+}
+
+.price-list {
+  background: linear-gradient(to bottom, #527CEB -33%, #061438 40%);
+  position: relative;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 400px;
+}
+.price-list h2 {
+  color: #FFFFFF;
+  padding: 30px 0;
+}
+.price-list p {
+  color: #888888;
+}
+.price-list .price-box-container {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 16%;
+}
+.price-list .price-box-container .box-content {
+  background-color: #ffffff;
+  padding: 40px 100px;
+  border-radius: 20px;
+  position: relative;
+  margin-right: 60px;
+  /* Pink Box */
+}
+.price-list .price-box-container .box-content h3 {
   font-size: 40px;
+  position: relative;
+  z-index: 1;
+}
+.price-list .price-box-container .box-content p {
+  color: #000000;
+  text-transform: uppercase;
+  padding: 10px 0;
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
+.price-list .price-box-container .box-content .number-price {
+  font-size: 100px;
+  font-weight: bold;
+  padding-bottom: 30px;
+  position: relative;
+  z-index: 1;
+}
+.price-list .price-box-container .box-content .number-price::before {
+  content: "$";
+  font-size: 14px;
+  display: block;
+  position: relative;
+  right: 60px;
+  top: 0;
+  padding-top: 30px;
+}
+.price-list .price-box-container .box-content .number-price::after {
+  content: "Per Month";
+  display: block;
+  font-size: 14px;
+  color: #888888;
+  font-weight: 400;
+}
+.price-list .price-box-container .box-content .features-subscription {
+  padding: 10px 0;
+}
+.price-list .price-box-container .box-content .features-subscription span {
+  color: #888888;
+}
+.price-list .price-box-container .box-content button {
+  margin-top: 30px;
+  box-shadow: 0 0 20px #f9636b;
+}
+.price-list .price-box-container .box-content button span {
+  padding-left: 15px;
+}
+.price-list .price-box-container .box-content button span i {
+  vertical-align: middle;
+}
+.price-list .price-box-container .box-content .bg-number {
+  position: absolute;
+  top: -70px;
+  right: -10px;
+  font-size: 300px;
+  font-weight: bold;
+  color: #00000014;
+}
+.price-list .price-box-container .box-content.bg-pink {
+  background: linear-gradient(to top, #f9636b, #b6246e);
+  color: #FFFFFF;
+}
+.price-list .price-box-container .box-content.bg-pink p {
+  color: #FFFFFF;
+}
+.price-list .price-box-container .box-content.bg-pink .number-price::after {
+  color: #e0e0e0;
+}
+.price-list .price-box-container .box-content.bg-pink .features-subscription span {
+  color: #e0e0e0;
+}
+.price-list .price-box-container .box-content.bg-pink button {
+  color: #f9636b;
+}
+
+.blog {
+  background-color: #00000014;
+  padding-top: 500px;
+  text-align: center;
+}
+.blog h2 {
+  padding: 20px 0;
+}
+.blog .blog-container .box-container {
+  height: 350px;
+}
+.blog .blog-container .box-container.bg-image {
+  padding: 20px;
+  background-image: url("../img/headway-537308-unsplash-1380x703.jpg");
+  background-size: cover;
+}
+.blog .blog-container .box-container .box-content {
+  display: flex;
+}
+.blog .blog-container .box-container .box-content .left .date {
+  color: #e0e0e0;
+}
+.blog .blog-container .box-container .box-content .left .date .pound {
+  padding: 0 5px;
+  font-size: 3px;
+  vertical-align: middle;
+}
+.blog .blog-container .box-container .box-content .left .date .about-by {
+  color: #FFFFFF;
 }
