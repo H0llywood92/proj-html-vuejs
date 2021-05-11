@@ -232,20 +232,28 @@
     }
 
     .blog-container {
+        padding: 60px 0;
+        @include flex;
+        justify-content: space-between;
 
         .box-container {
-            height: 350px;
-
-            &.bg-image {
-                padding: 20px;
-                background-image: url('../img/headway-537308-unsplash-1380x703.jpg');
-                background-size: cover;
-            }
+            height: 400px;
+            border-radius: 25px;            
+            width: 25%;
+            background: linear-gradient(to top left, $blue_primary -33%, $dark_blue 40%);
 
             .box-content {
                 @include flex;
+                flex-direction: column;
+                justify-content: space-around;
+                text-align: left;
+                padding: 40px;
+                height: 100%;
                 
                 .left {
+                    
+                    color: #FFFFFF;
+                    
                     .date {
     
                         color: #e0e0e0;
@@ -260,10 +268,56 @@
                             color: #FFFFFF;
                         }
                     }
+
+                    h4 {
+                        padding: 20px 0;
+                        font-size: 20px;
+                    }
+
+                    p {
+                        color: #e0e0e0;
+                        font-size: 14px;
+                    }
                 }
 
                 .right {
+                    
 
+                    button {
+                        margin-top: 30px;
+                        color: #000000;
+                    }
+                }
+            }
+
+            /* Bg-Image */
+            &.bg-image {
+                padding: 20px;
+                background-image: url('../img/headway-537308-unsplash-1380x703.jpg');
+                background-size: cover;
+                width: 45%;
+                filter: brightness(90%);
+
+                .box-content{
+                    padding: 0;
+                    align-items: flex-end;
+                    flex-direction: row;
+                }
+
+                .left {
+                    width: 60%;
+                    text-align: left;
+
+                    h4 {
+                        font-size: 18px;
+                        padding: 10px 0;
+                    }
+                    
+                }
+
+                .right {
+                    width: 40%;
+                    text-align: end;
                 }
             }
         }
