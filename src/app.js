@@ -3,6 +3,7 @@ var app = new Vue (
         el:'#root',
 
         data: {
+            //Navbar Link
             navbarLink: [
                 'Home',
                 'About',
@@ -11,7 +12,9 @@ var app = new Vue (
                 'Contact',
                 'Portfolio'
             ],
+            // End Navbar Link
 
+            //Footer link
             quickLinksFooter: [
                 'Services',
                 'Contact',
@@ -31,6 +34,7 @@ var app = new Vue (
                 Phone: '+99 (0) 101 0000 888',
                 Email: 'info@yourdomain.com'
             }
+            //End Footer link
         },
 
         methods: {

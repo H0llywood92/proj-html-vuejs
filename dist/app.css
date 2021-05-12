@@ -76,6 +76,10 @@ h2 span {
 .bg-blue .container {
   padding-top: 20px;
   padding-bottom: 60px;
+  /* NAV */
+  /* End NAV */
+  /* Header Content */
+  /* End Header Content */
 }
 .bg-blue .container nav {
   display: flex;
@@ -137,10 +141,13 @@ h2 span {
   width: 50%;
 }
 
+/* Services */
 .services {
   padding: 60px;
   text-align: center;
   background-color: #00000014;
+  /* Box Container */
+  /* End Box Container */
 }
 .services p {
   color: #888888;
@@ -171,6 +178,8 @@ h2 span {
   box-shadow: 0px 0px 30px #f9636b;
 }
 
+/* End Services */
+/* Bg-Blue Graphic */
 .bg-blue .container {
   padding: 60px 0;
 }
@@ -213,9 +222,17 @@ h2 span {
   margin-right: 35px;
 }
 
+/* End Bg-Blue Graphic */
+/* Portfolio */
 .portfolio {
   background-color: #00000014;
   padding: 40px 0;
+  /* Title Section */
+  /* End Title Section */
+  /* Carousel */
+  /* End Carousel */
+  /* Carousel Point */
+  /* End Carousel Point */
 }
 .portfolio .title-section {
   display: flex;
@@ -269,6 +286,8 @@ h2 span {
   color: #00000014;
 }
 
+/* End Portfolio */
+/* Price List */
 .price-list {
   position: relative;
   text-align: center;
@@ -286,6 +305,7 @@ h2 span {
   position: absolute;
   top: 50%;
   left: 16%;
+  /* Box Content */
 }
 .price-list .price-box-container .box-content {
   background-color: #FFFFFF;
@@ -293,6 +313,9 @@ h2 span {
   border-radius: 20px;
   position: relative;
   margin-right: 60px;
+  /* Number Price */
+  /* Background Number */
+  /* End Background Number */
   /* Pink Box */
 }
 .price-list .price-box-container .box-content h3 {
@@ -314,6 +337,7 @@ h2 span {
   padding-bottom: 30px;
   position: relative;
   z-index: 1;
+  /* End Number Price */
 }
 .price-list .price-box-container .box-content .number-price::before {
   content: "$";
@@ -372,6 +396,8 @@ h2 span {
   color: #f9636b;
 }
 
+/* End Price List */
+/* Blog */
 .blog {
   background-color: #00000014;
   padding-top: 500px;
@@ -448,14 +474,20 @@ h2 span {
   text-align: end;
 }
 
+/* End Blog */
+/* Testimonial */
 .testimonial {
   background-color: #00000014;
   text-align: center;
   padding: 150px 0;
+  /* Features Box */
+  /* End Features Box */
 }
 .testimonial .features-box {
   display: flex;
   padding-top: 100px;
+  /* Box */
+  /* End Box */
 }
 .testimonial .features-box .box {
   padding: 40px;
@@ -487,6 +519,7 @@ h2 span {
   padding: 100px 0;
 }
 
+/* End Testimonial */
 footer {
   position: relative;
   padding-top: 200px;

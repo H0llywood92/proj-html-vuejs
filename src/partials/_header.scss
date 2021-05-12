@@ -6,6 +6,7 @@
         padding-top: 20px;
         padding-bottom: 60px;
 
+        /* NAV */
         nav {
             @include flex;
             justify-content: space-between;
@@ -48,7 +49,9 @@
                 }
             }
         }
+        /* End NAV */
     
+        /* Header Content */
         .header-content {
             @include flex;
             padding: 40px 0;
@@ -69,5 +72,6 @@
             }
     
         }
+        /* End Header Content */
     }
 }
