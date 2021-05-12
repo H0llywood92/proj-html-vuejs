@@ -40,7 +40,6 @@
 }
 
 .bg-blue {
-    background: $bg_blue;
 
     .container {
         padding: 60px 0;
@@ -83,6 +82,7 @@
 
 .portfolio {
     background-color: $bg_light_grey;
+    padding: 40px 0;
 
     .title-section {
         @include flex;
@@ -93,7 +93,7 @@
         .right {
 
             .arrow {
-                border: 1px solid #f9636b;
+                border: 1px solid $pink_text;
                 border-radius: 50%;
                 padding: 15px;
                 margin: 0 10px;
@@ -110,10 +110,9 @@
         padding: 40px 0;
         display: -webkit-box;
         overflow: hidden;
-        overflow-x: auto;
 
        .single-box {
-           background-color: #FFFFFF;
+           background-color: $white_text;
            border-radius: 20px;
            overflow: hidden;
            margin: 0 25px;
@@ -138,10 +137,20 @@
         }
        }
     }
+
+    .circle-counter-carousel {
+        text-align: center;
+        padding: 40px 0 60px 0;
+
+        i {
+            margin: 0 5px;
+            font-size: 13px;
+            color: $bg_light_grey;
+        }
+    }
 }
 
 .price-list {
-    background: $bg_blue;
     position: relative;
     text-align: center;
     padding-top: 40px;
@@ -163,7 +172,7 @@
         
 
         .box-content {
-            background-color: #ffffff;
+            background-color: $white_text;
             padding: 40px 100px;
             border-radius: 20px;
             position: relative;
@@ -242,11 +251,11 @@
 
             /* Pink Box */
             &.bg-pink {
-                background: linear-gradient(to top, #f9636b, #b6246e);
-                color: #FFFFFF;
+                background: linear-gradient(to top, $pink_text, $dark_pink_text);
+                color: $white_text;
 
                 p {
-                    color: #FFFFFF;
+                    color: $white_text;
                 }
 
                 .number-price {
@@ -299,7 +308,7 @@
                 
                 .left {
                     
-                    color: #FFFFFF;
+                    color: $white_text;
                     
                     .date {
     
@@ -312,7 +321,7 @@
                         }
         
                         .about-by {
-                            color: #FFFFFF;
+                            color: $white_text;
                         }
                     }
 
@@ -390,14 +399,14 @@
                 padding: 40px;
 
                 i {
-                    color: lighten(#b6246e, 10%);
+                    color: lighten($dark_pink_text, 10%);
                 }
                 
             }
 
             img {
                 width: 100px;
-                border: 5px solid #b6246e;
+                border: 5px solid $dark_pink_text;
                 border-radius: 999px;
             }
 
