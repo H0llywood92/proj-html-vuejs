@@ -79,4 +79,45 @@ footer {
             }
         }
     }
+
+    .border {
+        border-top: 1px solid $grey_text;
+
+        .container {
+            padding: 0;
+
+            .copyright-and-social {
+                @include flex;
+                justify-content: space-between;
+                align-items: center;
+                color: $grey_text;
+    
+                .copyright {
+                    padding: 20px 0;
+                    font-size: 15px;
+
+                    span {
+                        margin-right: 5px;
+                    }
+    
+                }
+    
+                .social {
+
+                    ul {
+                        @include flex;
+
+                        li {
+                            padding: 0 10px;
+
+                            a {
+                                color: $grey_text;
+                            }
+                        }
+                    }
+    
+                }
+            }
+        }
+    }
 }

@@ -545,3 +545,31 @@ footer .footer-link-lists .logo img {
 footer .footer-link-lists .logo p {
   padding: 20px 0;
 }
+footer .border {
+  border-top: 1px solid #888888;
+}
+footer .border .container {
+  padding: 0;
+}
+footer .border .container .copyright-and-social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #888888;
+}
+footer .border .container .copyright-and-social .copyright {
+  padding: 20px 0;
+  font-size: 15px;
+}
+footer .border .container .copyright-and-social .copyright span {
+  margin-right: 5px;
+}
+footer .border .container .copyright-and-social .social ul {
+  display: flex;
+}
+footer .border .container .copyright-and-social .social ul li {
+  padding: 0 10px;
+}
+footer .border .container .copyright-and-social .social ul li a {
+  color: #888888;
+}
