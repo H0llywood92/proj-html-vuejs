@@ -71,12 +71,12 @@ var app = new Vue (
                         
                         this.chatArray.push(
                             {
-                                message: 'ok',
+                                message: 'Give me a moment',
                                 status: 'pc'
                             }
                         );
 
-                    }, 3000);
+                    }, 2000);
                     
                 }
 

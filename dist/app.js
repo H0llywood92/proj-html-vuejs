@@ -47,10 +47,10 @@ var app = new Vue({
         });
         setTimeout(function () {
           _this.chatArray.push({
-            message: 'ok',
+            message: 'Give me a moment',
             status: 'pc'
           });
-        }, 3000);
+        }, 2000);
       }
 
       this.messageSent = '';
