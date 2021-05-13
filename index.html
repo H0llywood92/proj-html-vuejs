@@ -298,23 +298,6 @@
                     </div>
                     <!-- End Single Box -->
 
-                    <!-- Single Box -->
-                    <div class="single-box">
-
-                        <div class="image-box">
-                            <img src="img/8wa60okr-1-790x576.jpg" alt="...">
-                        </div>
-
-                        <div class="info-content">
-
-                            <div class="image-title">Basket of Flower on table</div>
-                            <div class="grey-text">Branding Started</div>
-
-                        </div>
-
-                    </div>
-                    <!-- End Single Box -->
-
                 </div>
 
                 <div  class="circle-counter-carousel">
@@ -783,7 +766,21 @@
             <a href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
         </div>
 
-        <div class="chat">
+        <div class="chat-opened" v-if="opened">
+            <ul>
+                <li v-for="message in chatArray">
+                    {{message.message}} <br> <span>{{message.status}}</span>
+                </li>
+            </ul>
+
+            <input type="text" v-model="messageSent" @keyup.enter="sendMessage()">
+
+        </div>
+
+        
+        
+
+        <div class="chat" @click="open()">
             <i class="far fa-comment"></i>
         </div>
         <!-- End Fixed -->

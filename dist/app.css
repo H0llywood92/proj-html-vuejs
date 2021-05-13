@@ -253,7 +253,7 @@ h2 span {
 .portfolio .carousel-content {
   padding: 40px 0;
   display: -webkit-box;
-  overflow: hidden;
+  overflow-y: auto;
 }
 .portfolio .carousel-content .single-box {
   background-color: #FFFFFF;
@@ -622,6 +622,48 @@ footer .border .container .copyright-and-social .social ul li a {
 }
 .pg-up a {
   color: #000000;
+}
+
+.chat-opened {
+  position: fixed;
+  bottom: 70px;
+  right: 61px;
+  width: 200px;
+  height: 200px;
+  border-radius: 13% 3% 13% 3%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #527CEB -33%, #061438 40%);
+}
+.chat-opened ul {
+  overflow-y: auto;
+}
+.chat-opened ul li {
+  padding: 20px;
+  color: #FFFFFF;
+}
+.chat-opened ul li span {
+  position: relative;
+  font-size: 12px;
+  top: 0;
+  left: 100%;
+  color: #f9636b;
+}
+.chat-opened input {
+  position: relative;
+  bottom: 0px;
+  border: 1px solid #f9636b;
+  width: 100%;
+  height: 26px;
+  padding: 5px 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  outline: 0;
+  color: #FFFFFF;
+  background: linear-gradient(to left, #f9636b, #b6246e);
 }
 
 .chat {
