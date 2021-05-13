@@ -227,6 +227,7 @@ h2 span {
 .portfolio {
   background-color: #00000014;
   padding: 40px 0;
+  overflow: hidden;
   /* Title Section */
   /* End Title Section */
   /* Carousel */
@@ -253,7 +254,8 @@ h2 span {
 .portfolio .carousel-content {
   padding: 40px 0;
   display: -webkit-box;
-  overflow-y: auto;
+  /* overflow-y: auto; */
+  margin: 0 -26%;
 }
 .portfolio .carousel-content .single-box {
   background-color: #FFFFFF;

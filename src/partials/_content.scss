@@ -90,6 +90,7 @@
 .portfolio {
     background-color: $bg_light_grey;
     padding: 40px 0;
+    overflow: hidden;
 
     /* Title Section */
     .title-section {
@@ -119,7 +120,9 @@
     .carousel-content {
         padding: 40px 0;
         display: -webkit-box;
-        overflow-y: auto;
+        /* overflow-y: auto; */ //se vuoi vedre scroll attiva
+        //disattiva margin 
+        margin: 0 -26%;
 
        .single-box {
            background-color: $white_text;
