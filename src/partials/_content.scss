@@ -158,6 +158,10 @@
             margin: 0 5px;
             font-size: 13px;
             color: $bg_light_grey;
+
+            &:first-child {
+                color: $dark_pink_text;
+            }
         }
     }
     /* End Carousel Point */

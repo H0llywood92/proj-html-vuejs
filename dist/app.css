@@ -285,6 +285,9 @@ h2 span {
   font-size: 13px;
   color: #00000014;
 }
+.portfolio .circle-counter-carousel i:first-child {
+  color: #B6246E;
+}
 
 /* End Portfolio */
 /* Price List */
