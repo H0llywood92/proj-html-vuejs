@@ -197,6 +197,7 @@
             border-radius: 20px;
             position: relative;
             margin-right: 60px;
+            color: #000000;
 
 
             h3 {
@@ -221,6 +222,7 @@
                 padding-bottom: 30px;
                 position: relative;
                 z-index: 1;
+                
 
                 &::before {
                     content: "$";
@@ -278,6 +280,7 @@
                 background: linear-gradient(to top, $pink_text, $dark_pink_text);
                 color: $white_text;
 
+                
                 p {
                     color: $white_text;
                 }
@@ -285,7 +288,6 @@
                 .number-price {
 
                     &::after {
-                        
                         color: #e0e0e0;
                     }
                 }
