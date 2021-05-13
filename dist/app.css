@@ -572,6 +572,7 @@ footer .footer-link-lists div li a {
 }
 footer .footer-link-lists div li a span {
   color: #FFFFFF;
+  padding-right: 3px;
 }
 footer .footer-link-lists .logo img {
   width: 150px;

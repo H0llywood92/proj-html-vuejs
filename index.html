@@ -662,6 +662,7 @@
                         <p>When, while lovely valley teems with vapour around meand meridian sun stikes the upper impenetrable</p>
                     </div>
 
+                    <!-- Quick Links -->
                     <div class="quick-links">
 
                         <h5>Quick Links</h5>
@@ -678,7 +679,9 @@
 
 
                     </div>
+                    <!-- End Quick Links -->
 
+                    <!-- Resources -->
                     <div class="resources">
 
                         <h5>Resources</h5>
@@ -694,33 +697,24 @@
                         </ul>
 
                     </div>
+                    <!-- End Resources -->
 
+                    <!-- Contact Us -->
                     <div class="contact-us">
 
                         <h5>Contact Us</h5>
 
                         <ul>
 
-                            <li>
+                            <li v-for="(value, name) in contactUs">
 
-                                <a href="#"> <span>Address : </span> {{contactUs.Address}} </a>
-                            </li>
-
-                            <li>
-
-                                <a href="#"> <span>Phone : </span> {{contactUs.Phone}} </a>
-
-                            </li>
-
-                            <li>
-
-                                <a href="#"> <span>Email : </span> {{contactUs.Email}} </a>
-
+                                <a href="#"> <span>{{name}} : </span> {{value}} </a>
                             </li>
 
                         </ul>
 
                     </div>
+                    <!-- End Contact Us -->
 
                 </div>
                 <!-- End Links -->
