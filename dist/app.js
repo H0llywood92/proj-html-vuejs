@@ -13,7 +13,6 @@ var app = new Vue({
     //Navbar Link
     navbarLink: ['Home', 'About', 'Services', 'Blog', 'Contact', 'Portfolio'],
     // End Navbar Link
-    carousel: '',
     //Footer link
     quickLinksFooter: ['Services', 'Contact', 'Blog'],
     resourcesLinkFooter: ['Art Design', 'Computer', 'IT News', 'Networking', 'Web Security'],
@@ -24,32 +23,7 @@ var app = new Vue({
     } //End Footer link
 
   },
-  methods: {
-    movement: function movement() {
-      this.carosuel.slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [{
-          breakpoint: 768,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 3
-          }
-        }, {
-          breakpoint: 480,
-          settings: {
-            arrows: false,
-            centerMode: true,
-            centerPadding: '40px',
-            slidesToShow: 1
-          }
-        }]
-      });
-    }
-  }
+  methods: {}
 });
 
 /***/ }),

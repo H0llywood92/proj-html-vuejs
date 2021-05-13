@@ -24,6 +24,6 @@
     "sass-loader": "^11.0.1"
   },
   "dependencies": {
-  
+    "vue-carousel": "^0.18.0"
   }
 }
